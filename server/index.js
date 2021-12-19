@@ -21,6 +21,10 @@ io.on("connection", (socket) => {
     });
 })
 
+app.get('/', (req, res, next) => {
+    res.send('OK !');
+})
+
 server.listen(8000, () => {
     console.log('Server running on port : 8000');
 })
